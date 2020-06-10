@@ -8,35 +8,29 @@ from django.db import models
 
 class CustomText(models.Model):
     title = models.CharField(max_length=150,)
-    ytgfhgfkhgf = models.OneToOneField(
-        "home.HomePage",
-        on_delete=models.CASCADE,
-        null=True,
-        blank=True,
-        related_name="customtext_ytgfhgfkhgf",
-    )
-    hgfkhfkhf = models.ForeignKey(
-        "users.User",
-        on_delete=models.CASCADE,
-        null=True,
-        blank=True,
-        related_name="customtext_hgfkhfkhf",
-    )
-    ghfkjfjf = models.ManyToManyField(
-        "home.HomePage", blank=True, related_name="customtext_ghfkjfjf",
-    )
-    mhgfkhgfkh = models.BigIntegerField(null=True, blank=True,)
-    hgfjhgfhgf = models.BigIntegerField(null=True, blank=True,)
-    kjhlkjhkljh = models.OneToOneField(
+    hgfhgfkh = models.OneToOneField(
         settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE,
         null=True,
         blank=True,
-        related_name="customtext_kjhlkjhkljh",
+        related_name="customtext_hgfhgfkh",
     )
-    sgdagdasd = models.ManyToManyField(
-        "home.CustomText", blank=True, related_name="customtext_sgdagdasd",
+    nvhgjfghfg = models.ManyToManyField(
+        "home.HomePage", blank=True, related_name="customtext_nvhgjfghfg",
     )
+    gfhgfjhfjhgf = models.ForeignKey(
+        "users.User",
+        on_delete=models.CASCADE,
+        null=True,
+        blank=True,
+        related_name="customtext_gfhgfjhfjhgf",
+    )
+    hfkhgfhgf = models.ManyToManyField(
+        "home.HomePage", blank=True, related_name="customtext_hfkhgfhgf",
+    )
+    jhgkhgljhg = models.BigIntegerField(null=True, blank=True,)
+    hgfhjgf = models.BigIntegerField(null=True, blank=True,)
+    jhgjhgk = models.BigIntegerField(null=True, blank=True,)
 
     def __str__(self):
         return self.title
