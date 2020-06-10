@@ -35,8 +35,4 @@ class HomePage(models.Model):
 
 class HUtg(models.Model):
     "Generated Model"
-    fsgwegfsd = models.ForeignKey(
-        settings.AUTH_USER_MODEL,
-        on_delete=models.CASCADE,
-        related_name="hutg_fsgwegfsd",
-    )
+    swsd = models.BigIntegerField(null=True, blank=True,)
