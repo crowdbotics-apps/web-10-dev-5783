@@ -31,3 +31,12 @@ class HomePage(models.Model):
     @property
     def field(self):
         return "body"
+
+
+class HUtg(models.Model):
+    "Generated Model"
+    fsgwegfsd = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+        related_name="hutg_fsgwegfsd",
+    )
