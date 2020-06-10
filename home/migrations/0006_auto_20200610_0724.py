@@ -9,33 +9,47 @@ class Migration(migrations.Migration):
 
     dependencies = [
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
-        ('home', '0005_auto_20200610_0713'),
+        ("home", "0005_auto_20200610_0713"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='customtext',
-            name='adsdfa',
+            model_name="customtext",
+            name="adsdfa",
             field=models.BigIntegerField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='customtext',
-            name='asaw',
+            model_name="customtext",
+            name="asaw",
             field=models.BigIntegerField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='customtext',
-            name='gfjhgfjgf',
-            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='customtext_gfjhgfjgf', to=settings.AUTH_USER_MODEL),
+            model_name="customtext",
+            name="gfjhgfjgf",
+            field=models.ForeignKey(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.CASCADE,
+                related_name="customtext_gfjhgfjgf",
+                to=settings.AUTH_USER_MODEL,
+            ),
         ),
         migrations.AddField(
-            model_name='customtext',
-            name='gfkhgfjghf',
-            field=models.OneToOneField(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='customtext_gfkhgfjghf', to='home.HomePage'),
+            model_name="customtext",
+            name="gfkhgfjghf",
+            field=models.OneToOneField(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.CASCADE,
+                related_name="customtext_gfkhgfjghf",
+                to="home.HomePage",
+            ),
         ),
         migrations.AddField(
-            model_name='customtext',
-            name='sfef',
-            field=models.ManyToManyField(blank=True, related_name='customtext_sfef', to='home.HomePage'),
+            model_name="customtext",
+            name="sfef",
+            field=models.ManyToManyField(
+                blank=True, related_name="customtext_sfef", to="home.HomePage"
+            ),
         ),
     ]
