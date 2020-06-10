@@ -35,4 +35,4 @@ class HomePage(models.Model):
 
 class HUtg(models.Model):
     "Generated Model"
-    swsd = models.BigIntegerField(null=True, blank=True,)
+    fwer = models.BigIntegerField(null=True, blank=True,)

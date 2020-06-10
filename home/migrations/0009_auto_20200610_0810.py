@@ -6,17 +6,14 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('home', '0008_hutg'),
+        ("home", "0008_hutg"),
     ]
 
     operations = [
-        migrations.RemoveField(
-            model_name='hutg',
-            name='fsgwegfsd',
-        ),
+        migrations.RemoveField(model_name="hutg", name="fsgwegfsd",),
         migrations.AddField(
-            model_name='hutg',
-            name='swsd',
+            model_name="hutg",
+            name="swsd",
             field=models.BigIntegerField(blank=True, null=True),
         ),
     ]
